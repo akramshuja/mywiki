@@ -2,41 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Wikipedia-style Portfolio Design System 
+All colors MUST be HSL. Inspired by Wikipedia's clean, encyclopedia aesthetic.
 */
 
 @layer base {
   :root {
+    /* Core Wikipedia colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 0%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Wikipedia blue theme */
+    --primary: 220 100% 50%; /* Wikipedia blue */
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 220 100% 45%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Wikipedia-style neutrals */
+    --secondary: 0 0% 96%; /* Light gray backgrounds */
+    --secondary-foreground: 0 0% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --muted: 0 0% 94%; /* Table headers, sidebar */
+    --muted-foreground: 0 0% 25%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --accent: 0 0% 98%; /* Hover states */
+    --accent-foreground: 0 0% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Wikipedia borders and lines */
+    --border: 0 0% 85%;
+    --border-light: 0 0% 90%;
+    --input: 0 0% 85%;
+    --ring: 220 100% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Wikipedia info box colors */
+    --wiki-infobox: 0 0% 98%;
+    --wiki-infobox-border: 0 0% 85%;
+    --wiki-table-header: 0 0% 95%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Status colors */
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 120 50% 40%;
+    --warning: 45 90% 50%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --radius: 0.25rem; /* Minimal radius for Wikipedia feel */
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +64,36 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode Wikipedia - subtle and professional */
+    --background: 0 0% 9%;
+    --foreground: 0 0% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --primary: 220 100% 60%;
+    --primary-foreground: 0 0% 0%;
+    --primary-hover: 220 100% 65%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 85%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 70%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --accent: 0 0% 20%;
+    --accent-foreground: 0 0% 85%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --border: 0 0% 25%;
+    --border-light: 0 0% 20%;
+    --input: 0 0% 25%;
+    --ring: 220 100% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --wiki-infobox: 0 0% 12%;
+    --wiki-infobox-border: 0 0% 25%;
+    --wiki-table-header: 0 0% 15%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --destructive: 0 70% 60%;
+    --destructive-foreground: 0 0% 0%;
+    --success: 120 50% 60%;
+    --warning: 45 90% 60%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +111,47 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  /* Wikipedia typography */
+  .wiki-heading {
+    @apply font-normal border-b border-border-light pb-1 mb-4;
+    font-family: "Linux Libertine", Georgia, Times, serif;
+  }
+
+  .wiki-content {
+    @apply text-sm leading-relaxed;
+  }
+
+  .wiki-link {
+    @apply text-primary hover:text-primary-hover underline decoration-1 underline-offset-2;
+  }
+
+  .wiki-infobox {
+    @apply bg-muted border border-wiki-infobox-border rounded-sm;
+  }
+
+  .wiki-table-header {
+    @apply bg-wiki-table-header border-b border-border font-medium;
+  }
+
+  /* Custom scrollbar for sidebar */
+  .wiki-sidebar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .wiki-sidebar::-webkit-scrollbar-track {
+    @apply bg-secondary;
+  }
+
+  .wiki-sidebar::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+
+  .wiki-sidebar::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
   }
 }
