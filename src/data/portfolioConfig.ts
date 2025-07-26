@@ -183,4 +183,4 @@ export const sampleITConfig: WikiPortfolioConfig = {
 };
 
 // Default export for easy customization
-export default akramShujaConfig;
+export const defaultConfig = sampleITConfig;
