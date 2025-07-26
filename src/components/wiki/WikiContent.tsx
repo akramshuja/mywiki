@@ -48,7 +48,7 @@ export const WikiContent: React.FC<WikiContentProps> = ({ sections }) => {
   };
 
   return (
-    <main className="bg-background">
+    <main className="bg-background pt-8">
       <div className="prose prose-sm max-w-none">
         {sections.map(section => renderSection(section))}
       </div>

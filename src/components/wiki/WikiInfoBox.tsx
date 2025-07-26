@@ -33,7 +33,7 @@ export const WikiInfoBox: React.FC<WikiInfoBoxProps> = ({ personalInfo }) => {
   );
 
   return (
-    <div className="wiki-infobox sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto">
+    <div className="wiki-infobox sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto w-full">
       <div className="text-center p-4 border-b border-wiki-infobox-border">
         <h2 className="font-medium text-base mb-3">{name}</h2>
         
@@ -105,11 +105,11 @@ export const WikiInfoBox: React.FC<WikiInfoBoxProps> = ({ personalInfo }) => {
             <InfoRow 
               label="Key Skills" 
               value={
-                <div className="flex flex-wrap gap-1">
+                <div className="flex flex-wrap gap-1 max-w-full">
                   {skills.map((skill, index) => (
                     <span 
                       key={index}
-                      className="inline-block bg-accent text-accent-foreground px-2 py-1 rounded text-xs"
+                      className="inline-block bg-accent text-accent-foreground px-2 py-1 rounded text-xs break-words"
                     >
                       {skill}
                     </span>
