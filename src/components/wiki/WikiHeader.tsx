@@ -16,14 +16,6 @@ export const WikiHeader: React.FC<WikiHeaderProps> = ({ name, tagline }) => {
             </div>
           </div>
           
-          <div className="flex items-center space-x-4">
-            <nav className="hidden md:flex items-center space-x-6 text-sm">
-              <button className="text-foreground hover:text-primary">Profile</button>
-              <button className="text-muted-foreground hover:text-primary">Experience</button>
-              <button className="text-muted-foreground hover:text-primary">Skills</button>
-              <button className="text-muted-foreground hover:text-primary">Contact</button>
-            </nav>
-          </div>
         </div>
       </div>
       
