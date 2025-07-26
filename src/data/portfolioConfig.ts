@@ -1,6 +1,6 @@
 import { WikiPortfolioConfig } from '../components/WikiPortfolio';
 
-export const akramShujaConfig: WikiPortfolioConfig = {
+export const sampleITConfig: WikiPortfolioConfig = {
   personalInfo: {
     name: "Akram Shuja",
     tagline: "Senior Software Engineer and Scrum Master",
