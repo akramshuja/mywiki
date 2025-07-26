@@ -4,7 +4,7 @@ export const sampleITConfig: WikiPortfolioConfig = {
   personalInfo: {
     name: "Akram Shuja",
     tagline: "Senior Software Engineer and Scrum Master",
-    image: "/Profile.jpeg",
+    image: "https://akramshuja.github.io/mywiki/Profile.jpeg",
     birthPlace: "Patna, Bihar, India",
     otherNames: ["Samar"],
     education: [
