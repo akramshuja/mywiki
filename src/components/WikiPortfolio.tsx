@@ -59,12 +59,12 @@ export const WikiPortfolio: React.FC<WikiPortfolioProps> = ({ config }) => {
           )}
           
           {/* Main Content */}
-          <div className={`order-2 lg:order-2 ${tableOfContents ? 'lg:col-span-3' : 'lg:col-span-4'}`}>
+          <div className={`order-2 lg:order-2 ${tableOfContents ? 'lg:col-span-2' : 'lg:col-span-3'}`}>
             <WikiContent sections={sections} />
           </div>
           
           {/* Info Box */}
-          <div className="lg:col-span-1 order-1 lg:order-3">
+          <div className="lg:col-span-2 order-1 lg:order-3">
             <WikiInfoBox personalInfo={personalInfo} />
           </div>
         </div>

@@ -13,11 +13,13 @@ export const WikiContent: React.FC<WikiContentProps> = ({ sections }) => {
     const italicRegex = /\*([^*]+)\*/g;
     
     let processedContent = content
+      .replace(/\n\n/g, '</p><p>')
+      .replace(/\n/g, '<br>')
       .replace(linkRegex, '<a href="$2" class="wiki-link" target="_blank" rel="noopener noreferrer">$1</a>')
       .replace(boldRegex, '<strong>$1</strong>')
       .replace(italicRegex, '<em>$1</em>');
     
-    return { __html: processedContent };
+    return { __html: `<p>${processedContent}</p>` };
   };
 
   const renderSection = (section: ContentSection, level = 1) => {
