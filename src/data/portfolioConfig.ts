@@ -44,7 +44,7 @@ export const sampleITConfig: WikiPortfolioConfig = {
     {
       id: "overview",
       title: "Professional Overview",
-      content: "**Akram Shuja** is a *Senior Software Engineer* and *Scrum Master* at **OpenText** with over 11 years of experience in developing robust code for product development and customer solutions in Java and related technologies. He has a proven track record of writing quality and optimized code and delivering on time. Akram is an enthusiastic team player and a creative thinker. He specializes in full-stack development. In his current role at OpenText, he works on one of their publishing products used by leading news dailies. \n\nHe is currently pursuing his masters in Artifical Intelligence and Machine Learning from BITS Pilani."
+      content: "**Akram Shuja** is a *Senior Software Engineer* and *Scrum Master* at **OpenText** with over 11 years of experience in developing robust code for product development and customer solutions in Java and related technologies. He has a proven track record of writing quality and optimized code and delivering on time. Akram is an enthusiastic team player and a creative thinker. He specializes in full-stack development. In his current role at OpenText, he works on one of their publishing products used by leading news dailies. \n\nHe is currently pursuing his M.Tech. in Artifical Intelligence and Machine Learning from **BITS, Pilani**."
     },
     {
       id: "career",
