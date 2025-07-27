@@ -50,21 +50,21 @@ export const WikiPortfolio: React.FC<WikiPortfolioProps> = ({ config }) => {
       <WikiHeader name={personalInfo.name} tagline={personalInfo.tagline} />
       
       <div className="max-w-screen-xl mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 gap-6" style={{ gridTemplateColumns: tableOfContents ? '1fr 3fr 1.5fr' : '1fr 4fr 1.5fr' }}>
           {/* Table of Contents Sidebar */}
           {tableOfContents && (
-            <div className="lg:col-span-1 order-3 lg:order-1">
+            <div className="order-3 lg:order-1">
               <WikiSidebar sections={sections} />
             </div>
           )}
           
           {/* Main Content */}
-          <div className={`order-2 lg:order-2 ${tableOfContents ? 'lg:col-span-3' : 'lg:col-span-4'}`}>
+          <div className="order-2 lg:order-2">
             <WikiContent sections={sections} />
           </div>
           
           {/* Info Box */}
-          <div className="lg:col-span-1 order-1 lg:order-3">
+          <div className="order-1 lg:order-3">
             <WikiInfoBox personalInfo={personalInfo} />
           </div>
         </div>
