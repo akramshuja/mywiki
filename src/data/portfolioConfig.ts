@@ -3,9 +3,9 @@ import { WikiPortfolioConfig } from '../components/WikiPortfolio';
 export const sampleITConfig: WikiPortfolioConfig = {
   personalInfo: {
     name: "Akram Shuja",
-    tagline: "Senior Software Engineer and Scrum Master",
+    tagline: "R&D Engineer at OpenText",
     image: "https://akramshuja.github.io/mywiki/Profile.jpeg",
-    birthPlace: "Patna, Bihar, India",
+    birthPlace: "Hyderabad, Telangana, India",
     otherNames: ["Samar"],
     education: [
       {
@@ -56,17 +56,17 @@ export const sampleITConfig: WikiPortfolioConfig = {
         {
           id: "opentext",
           title: "OpenText (October 2023 - Present)",
-          content: "As a *Senior Software Engineer* and *Scrum Master* at **OpenText**, Akram works on a publishing product used by leading news dailies like News UK and DG. He contributes to developing robust code for the product."
+          content: "As a *Senior Software Engineer* and *Scrum Master* at **OpenText**, Akram works on a publishing product used by leading news dailies like News UK, News Australia and DG. He contributes to developing robust code for the product."
         },
         {
           id: "planon-softwares",
           title: "Planon Softwares (January 2018 - October 2023)",
-          content: "At **Planon Softwares**, Akram served as a *Principal Software Engineer*, having previously held roles \n\n as *Senior Software Engineer* and *Software Engineer*. His key contributions included: \n\n• **Team Leadership**: Leading a team of developers and testers to achieve sprint goals and guiding interns.\n\n• **Full Stack Development**: Adding new features to existing enterprise products and optimizing solutions.\n\n• **Development Practices**: Following test-driven development (Junit, Mockito), adhering strictly to Agile and Scrum methodologies (Sprint preparation, planning, review, retrospective meetings), and performing code reviews through Crucible for best coding practices.\n\n• **CI/CD**: Following best build and deploy approaches using Jenkins for CI/CD."
+          content: "At **Planon Softwares**, Akram served as a *Principal Software Engineer*, having previously held roles as *Senior Software Engineer* and *Software Engineer*. His key contributions included: \n\n• **Team Leadership**: Leading a team of developers and testers to achieve sprint goals and guiding interns.\n\n• **Full Stack Development**: Adding new features to existing enterprise products and optimizing solutions.\n\n• **Development Practices**: Following test-driven development (Junit, Mockito), adhering strictly to Agile and Scrum methodologies (Sprint preparation, planning, review, retrospective meetings), and performing code reviews through Crucible for best coding practices.\n\n• **CI/CD**: Following best build and deploy approaches using Jenkins for CI/CD."
         },
         {
           id: "virtusa",
           title: "Virtusa (April 2016 - January 2018)",
-          content: "As a *Programmer Analyst* at **Virtusa**, Akram worked on the Citi bank project for their TRIMS OCR and BE product."
+          content: "As a *Software Engineer* at **Virtusa**, Akram worked on the Citi bank project for their TRIMS OCR and BE product."
         },
         {
           id: "cognizant",
@@ -83,7 +83,7 @@ export const sampleITConfig: WikiPortfolioConfig = {
         {
           id: "backend",
           title: "Backend Development",
-          content: "Proficient in **Java** and **Spring Boot**. Experienced with **Microservices** architecture and **JPA**. Skilled in working with **Relational Databases** like MySQL and Oracle."
+          content: "Proficient in **Java** and **Spring Boot**. Experienced with **Microservices** architecture and **JPA**. Skilled in working with **Relational Databases** like MySQL, Oracle and Postgres."
         },
         {
           id: "frontend",
@@ -105,7 +105,7 @@ export const sampleITConfig: WikiPortfolioConfig = {
         {
           id: "planon-stateflow-diagrammer",
           title: "Planon Stateflow Diagrammer (June 2023 - Present)",
-          content: "Developed a solution to display and configure status transitions of Business Objects diagrammatically for end users. The frontend was designed using React JS, with the core product in Java/J2EE."
+          content: "Developed a solution to display and configure status transitions of Business Objects diagrammatically for end users."
         },
         {
           id: "development-improvement-program",
@@ -152,7 +152,7 @@ export const sampleITConfig: WikiPortfolioConfig = {
         {
           id: "formal-education",
           title: "Formal Education",
-          content: "Currently pursuing an **M.Tech. in Artificial Intelligence and Machine Learning** from **BITS Pilani** (2024-2026). He earned his **Bachelor of Technology in Computer Science and Engineering** from **Lovely Professional University** in 2014, graduating with an 8.63 CGPA. He also completed his SSC in Science from NIOS with 71.8% and HSC Matriculation from St. Xavier's, Patna with 86.2%."
+          content: "Currently pursuing an **M.Tech. in Artificial Intelligence and Machine Learning** from **BITS Pilani** (2024-2026). He earned his **Bachelor of Technology in Computer Science and Engineering** from **Lovely Professional University** in 2014, graduating with an 8.63 CGPA. He also completed his SSC in Science with 71.8% and HSC Matriculation from St. Xavier's, Patna with 86.2%."
         }
       ]
     },
@@ -169,7 +169,7 @@ export const sampleITConfig: WikiPortfolioConfig = {
         {
           id: "interests",
           title: "Interests",
-          content: "Akram's interests include:\n\n• Music - Playing guitar, geoshred, and singing\n\n• Playing and watching cricket\n\n• Visiting new places\n\n• Playing table tennis\n\n• Binge watching"
+          content: "Akram's interests include **Music**, **Cricket**, **Table Tennis**, **Films** and **Traveling**. His interest in music ranges from semi classical music like ghazals and sufi to progressive rock."
         },
         {
           id: "extracurricular",
