@@ -23,17 +23,17 @@ export const WikiInfoBox: React.FC<WikiInfoBoxProps> = ({ personalInfo }) => {
 
   const InfoRow: React.FC<{ label: string; value: React.ReactNode }> = ({ label, value }) => (
     <tr className="border-b border-border-light">
-      <td className="wiki-table-header px-3 py-2 text-xs font-medium w-1/3 align-top">
+      <td className="wiki-table-header px-3 py-2 text-xs font-medium w-1/3 align-top break-words">
         {label}
       </td>
-      <td className="px-3 py-2 text-xs text-foreground align-top">
+      <td className="px-3 py-2 text-xs text-foreground align-top break-words max-w-0">
         {value}
       </td>
     </tr>
   );
 
   return (
-    <div className="wiki-infobox sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto w-full">
+    <div className="wiki-infobox sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto w-full overflow-x-hidden">
       <div className="text-center p-4 border-b border-wiki-infobox-border">
         <h2 className="font-medium text-base mb-3">{name}</h2>
         
@@ -49,7 +49,7 @@ export const WikiInfoBox: React.FC<WikiInfoBoxProps> = ({ personalInfo }) => {
         )}
       </div>
 
-      <table className="w-full text-xs">
+      <table className="w-full text-xs table-fixed">
         <tbody>
           {birthPlace && (
             <InfoRow label="Location" value={birthPlace} />
@@ -105,11 +105,11 @@ export const WikiInfoBox: React.FC<WikiInfoBoxProps> = ({ personalInfo }) => {
             <InfoRow 
               label="Key Skills" 
               value={
-                <div className="flex flex-wrap gap-1 max-w-full">
+                <div className="flex flex-wrap gap-1 w-full">
                   {skills.map((skill, index) => (
                     <span 
                       key={index}
-                      className="inline-block bg-accent text-accent-foreground px-2 py-1 rounded text-xs break-words"
+                      className="inline-block bg-accent text-accent-foreground px-2 py-1 rounded text-xs break-all"
                     >
                       {skill}
                     </span>
